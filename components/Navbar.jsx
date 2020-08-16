@@ -47,7 +47,7 @@ export default function Navbar() {
           leaveTo='opacity-0 scale-95'
         >
           <div
-            className='absolute right-0 -mr-4 mt-4 w-screen bg-indigo-400 rounded-md shadow-outline-pink'
+            className='absolute right-0 mt-4 w-screen bg-indigo-400 rounded-md shadow-outline-pink'
             role='menu'
             aria-orientation='vertical'
             aria-labelledby='main-menu'
