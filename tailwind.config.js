@@ -8,6 +8,10 @@ module.exports = {
         watermelon: '#ff4a6e',
         lavender: '#9198e5',
         sunglo: '#e66465',
+        'linkedin-cyan': '#0e76a8',
+        'google-red': '#de5246',
+        'twitter-blue': '#00acee',
+        'facebook-blue': '#3b5998',
       },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],

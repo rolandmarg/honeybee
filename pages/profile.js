@@ -9,7 +9,6 @@ export default function Home({ initialData }) {
   return (
     <Layout>
       <Header title='profile' />
-      {JSON.stringify(user)}
     </Layout>
   );
 }
