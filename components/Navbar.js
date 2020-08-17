@@ -1,16 +1,37 @@
+import Link from 'next/link';
 import { useState } from 'react';
 import Transition from './Transition';
+import { useUser } from '../lib/hooks';
 
 export default function Navbar() {
+  const { user } = useUser();
   const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className='relative pt-7 pr-2'>
+    <div className='relative'>
       <div className='hidden sm:block'>
-        <ul className='mr-4 mt-1 flex flex-row text-xl text-center space-x-6'>
+        <ul className='mr-4 flex flex-row text-xl text-center space-x-6'>
           <li>About us</li>
           <li>Company</li>
           <li>Jobs</li>
           <li>Contact</li>
+          <li>
+            <a href='/api/v1/logout'>logout</a>
+          </li>
+          {user && (
+            <li>
+              <Link href='/profile'>
+                <a>Profile</a>
+              </Link>
+            </li>
+          )}
+          {!user && (
+            <li>
+              <Link href='/login'>
+                <a>Sign in</a>
+              </Link>
+            </li>
+          )}
         </ul>
       </div>
       <div className='sm:hidden'>

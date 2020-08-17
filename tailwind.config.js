@@ -6,6 +6,8 @@ module.exports = {
     extend: {
       colors: {
         watermelon: '#ff4a6e',
+        lavender: '#9198e5',
+        sunglo: '#e66465',
       },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
