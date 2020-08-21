@@ -12,5 +12,5 @@ and it just does not get things right in terms of what should be done by user an
 I'm doing oauth2 with passport now (bridge between passport and serverless nextjs is next-connect library).
 
 I have yet to decide how to store data, I want to be serverless so simply storing in any database won't do. Faunadb does seem decent alternative,
-but I'm not sure about investing into close-sourced project which does not let me self-host and even though it support transactions and referential integrity,
+but I'm not sure about investing into close-sourced project which does not let me self-host and even though it supports transactions and referential integrity(in addition to horizontal scaling, that may even be one-of-its-kind database with horizontal scaling + multiregion write atomicity guarantees, thanks to calvin and rift),
 it uses fql(fauna query language) and not sql.
